@@ -1,0 +1,47 @@
+{
+    "services": [
+      {
+        "id": 1,
+        "image": "wedding_planning.jpg",
+        "price": "৳250,000",
+        "title": "Complete Wedding Planning & Solution",
+        "details": "Our comprehensive wedding planning package includes everything you need to make your special day truly unforgettable. From venue selection to catering and logistics, we've got it all covered."
+      },
+      {
+        "id": 2,
+        "image": "wedding_photography.jpg",
+        "price": "৳125,000",
+        "title": "WEDDING PHOTOGRAPHY",
+        "details": "Capture every precious moment of your wedding day with our professional photography services. Our skilled photographers will ensure you have stunning memories to cherish forever."
+      },
+      {
+        "id": 3,
+        "image": "stage_decoration.jpg",
+        "price": "৳60,000",
+        "title": "WEDDING STAGE DECORATION",
+        "details": "Transform your wedding venue with our exquisite stage decoration services. We offer a range of themes and styles to match your vision for the perfect stage setup."
+      },
+      {
+        "id": 4,
+        "image": "royal_wedding_planners.jpg",
+        "price": "৳375,000",
+        "title": "Royal Wedding Planners",
+        "details": "Experience the royal treatment on your special day with our premium wedding planning services. We'll ensure every detail is regal and grand, just like you deserve."
+      },
+      {
+        "id": 5,
+        "image": "holud_stage_decor.jpg",
+        "price": "৳40,000",
+        "title": "Holud Stage Decor",
+        "details": "Add a touch of elegance to your holud ceremony with our vibrant and culturally-inspired stage decor. We'll create a colorful and inviting atmosphere for your pre-wedding celebration."
+      },
+      {
+        "id": 6,
+        "image": "wedding_entrance.jpg",
+        "price": "৳25,000",
+        "title": "Wedding Entrance",
+        "details": "Make a grand entrance on your big day with our custom wedding entrance designs. Whether you want something traditional or unique, we'll set the stage for your arrival."
+      }
+    ]
+  }
+  
