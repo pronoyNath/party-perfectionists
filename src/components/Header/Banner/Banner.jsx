@@ -1,7 +1,7 @@
 
 const Banner = () => {
     return (
-        <div>
+        <div data-aos="fade-left">
             <div className="hero h-[500px] bg-contain" style={{ backgroundImage: 'url(https://i.ibb.co/2hZVn1n/groom-bride-s-wedding-table-decorated-with-flowers-candles.jpg)' }}>
                 <div className="hero-overlay bg-opacity-30"></div>
                 <div className="hero-content text-center text-neutral-content">

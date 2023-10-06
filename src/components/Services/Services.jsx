@@ -6,7 +6,7 @@ const Services = ({services}) => {
     return (
         <div className='py-10'>
            <div className=' py-10'>
-           <h3 className='font-semibold text-2xl text-center underline'>Services We Provide</h3>
+           <h3 data-aos="fade-right" className='font-semibold text-2xl text-center underline'>Services We Provide</h3>
            </div>
            <div className="grid grid-cols-3 gap-10">
             {

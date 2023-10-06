@@ -5,7 +5,7 @@ const ServiceCard = ({ service }) => {
     const {id, image, price, title, details, } = service;
     
     return (
-        <div>
+        <div data-aos="fade-up-left">
             <div>
             <div className="relative flex h-[450px] flex-col  bg-white bg-clip-border text-gray-700 shadow-xl">
                 <div className="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
