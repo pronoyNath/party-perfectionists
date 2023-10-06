@@ -1,46 +1,95 @@
 {
     "services": [
-        {
-            "id": 1,
-            "image": "weddings.jpg",
-            "price": "৳250,000",
-            "title": "Weddings",
-            "details": "Let us make your wedding day a truly memorable and stress-free experience. We'll handle all the details so you can focus on enjoying your special day."
-        },
-        {
-            "id": 2,
-            "image": "birthday_parties.jpg",
-            "price": "৳75,000",
-            "title": "Birthday Parties",
-            "details": "Celebrate your birthday in style with our party planning services. We'll create a fun and festive atmosphere that your guests will love."
-        },
-        {
-            "id": 3,
-            "image": "anniversaries.jpg",
-            "price": "৳100,000",
-            "title": "Anniversaries",
-            "details": "Whether it's your first anniversary or your golden one, we'll help you celebrate in a way that honors your love story and creates lasting memories."
-        },
-        {
-            "id": 4,
-            "image": "engagement_parties.jpg",
-            "price": "৳90,000",
-            "title": "Engagement Parties",
-            "details": "Announce your engagement with a party that reflects your love story. We'll plan an engagement party that sets the tone for your journey ahead."
-        },
-        {
-            "id": 5,
-            "image": "retirement_parties.jpg",
-            "price": "৳60,000",
-            "title": "Retirement Parties",
-            "details": "Celebrate the next chapter of life in style with our retirement party planning services. We'll help you say goodbye to work and hello to relaxation."
-        },
-        {
-            "id": 6,
-            "image": "baby_shower.jpg",
-            "price": "৳50,000",
-            "title": "Baby Shower",
-            "details": "Welcome the newest addition to your family with a baby shower that's filled with joy and anticipation. We'll plan every detail to perfection."
-        }
+      {
+        "id": 1,
+        "image": "https://i.ibb.co/8gbgzV2/wedding-archway-backyard-happy-wedding-couple-outdoors-before-wedding-ceremony.jpg",
+        "price": "250,000",
+        "title": "Weddings",
+        "details": "Let us make your wedding day a truly memorable and stress-free experience. We'll handle all the details so you can focus on enjoying your special day.",
+        "servicesProvided": [
+          "Professional Photoshoot",
+          "Decorate the Wedding Stage",
+          "Venue Selection and Arrangement",
+          "Catering Services",
+          "Logistics Management"
+        ],
+        "moreDetails": "Our team of experienced professionals will work closely with you to create a customized wedding experience. From selecting the perfect flowers to planning your dream honeymoon, we've got you covered. We understand that your wedding day is one of the most significant moments in your life. That's why we pay attention to every detail, ensuring that your vision becomes a reality. Whether you desire a traditional wedding or a modern, avant-garde celebration, our creative team will design the perfect ambiance. Let us take the stress out of wedding planning so you can savor every moment of your special day."
+      },
+      {
+        "id": 2,
+        "image": "https://i.ibb.co/Jy0Q9nr/children-with-party-horns-celebrating-birthday.jpg",
+        "price": "75,000",
+        "title": "Birthday Parties",
+        "details": "Celebrate your birthday in style with our party planning services. We'll create a fun and festive atmosphere that your guests will love.",
+        "servicesProvided": [
+          "Themed Decorations",
+          "Entertainment and Activities",
+          "Birthday Cake Design",
+          "Party Favors",
+          "Event Coordination"
+        ],
+        "moreDetails": "We specialize in creating themed birthday parties that cater to your unique interests and hobbies. From superhero themes to princess themes, we bring your vision to life. Our expert team will transform your party space into a magical world, complete with custom decorations and engaging activities for guests of all ages. Whether you're celebrating a milestone birthday or simply want to have a memorable gathering with friends and family, we'll make it an unforgettable experience. From selecting the perfect cake to organizing entertaining games, we take care of every aspect to ensure you have a blast on your special day."
+      },
+      {
+        "id": 3,
+        "image": "https://i.ibb.co/6mGk4nn/bride-groom-having-their-wedding-beach.jpg",
+        "price": "100,000",
+        "title": "Anniversaries",
+        "details": "Whether it's your first anniversary or your golden one, we'll help you celebrate in a way that honors your love story and creates lasting memories.",
+        "servicesProvided": [
+          "Anniversary Venue Decoration",
+          "Customized Anniversary Theme",
+          "Catering Services",
+          "Entertainment",
+          "Anniversary Cake"
+        ],
+        "moreDetails": "Our anniversary celebrations are designed to capture the essence of your love journey. Share your story with your guests through personalized decorations and heartfelt moments. From intimate gatherings to grand anniversary parties, we'll create an atmosphere that reflects your unique bond. Our experienced team will take care of every detail, ensuring that your anniversary celebration is filled with love and joy. Whether you want to renew your vows or simply want to mark another year of togetherness, we'll make your anniversary a truly special occasion."
+      },
+      {
+        "id": 4,
+        "image": "https://i.ibb.co/KwYsv7k/groom-putting-ring-bride-s-finger.jpg",
+        "price": "90,000",
+        "title": "Engagement Parties",
+        "details": "Announce your engagement with a party that reflects your love story. We'll plan an engagement party that sets the tone for your journey ahead.",
+        "servicesProvided": [
+          "Engagement Party Venue Decoration",
+          "Engagement Cake Design",
+          "Entertainment and Music",
+          "Photography Services",
+          "Event Coordination"
+        ],
+        "moreDetails": "Your engagement party marks the beginning of your new life together. We'll help you create an atmosphere that symbolizes the love and commitment you share. From elegant engagement soirées to casual celebrations, we'll bring your vision to life. Our creative team will design the perfect décor and entertainment to make your engagement party unforgettable. Capture the magic of the moment with professional photography services that will preserve your memories forever. Let us handle the details so you can focus on celebrating your love."
+      },
+      {
+        "id": 5,
+        "image": "https://i.ibb.co/rQHMfGM/people-meeting-family-reunion.jpg",
+        "price": "60,000",
+        "title": "Retirement Parties",
+        "details": "Celebrate the next chapter of life in style with our retirement party planning services. We'll help you say goodbye to work and hello to relaxation.",
+        "servicesProvided": [
+          "Retirement Venue Decoration",
+          "Farewell Speech and Tributes",
+          "Catering Services",
+          "Entertainment",
+          "Retirement Gifts and Keepsakes"
+        ],
+        "moreDetails": "Retirement is a milestone worth celebrating. We'll create a retirement party that honors your achievements and prepares you for a life of leisure and adventure. From elegant retirement galas to relaxed gatherings, we'll tailor the celebration to your preferences. Our team will design the perfect retirement-themed decorations, and we'll organize heartfelt farewell speeches and tributes from colleagues and friends. Enjoy delicious catering services and entertainment that will make your retirement party a memorable event. We'll ensure that you leave the working world behind in style and embark on your retirement journey with a smile."
+      },
+      {
+        "id": 6,
+        "image": "https://i.ibb.co/f03xY7q/front-view-couple-gender-reveal-party.jpg",
+        "price": "50,000",
+        "title": "Baby Shower",
+        "details": "Welcome the newest addition to your family with a baby shower that's filled with joy and anticipation. We'll plan every detail to perfection.",
+        "servicesProvided": [
+          "Baby Shower Decorations",
+          "Gender Reveal Ideas",
+          "Games and Activities",
+          "Catering Services",
+          "Photography Services"
+        ],
+        "moreDetails": "Celebrate the upcoming arrival of your little one with a baby shower that reflects your excitement and love. We'll make it a memorable occasion for you and your guests. Our team will create charming baby shower decorations that match your chosen theme, and we can even help you reveal the baby's gender in a fun and creative way. Enjoy entertaining games and activities that will keep your guests engaged and delighted. Savor delicious catering services and capture the moments with professional photography. Let us ensure that your baby shower is a heartwarming event filled with joy and anticipation."
+      }
     ]
-}
+  }
+  

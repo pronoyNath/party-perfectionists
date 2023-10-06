@@ -4,6 +4,7 @@ import Home from "../Pages/Home/Home";
 import OurProjects from "../Pages/OurProjects/OurProjects";
 import Contact from "../Pages/Contact/Contact";
 import Login from "../Pages/Login/Login";
+import ServiceDetail from "../components/Services/ServiceDetail/ServiceDetail";
 
  const router = createBrowserRouter([
         {
@@ -12,7 +13,13 @@ import Login from "../Pages/Login/Login";
             children:[
                 {
                     path: '/',
-                    element: <Home></Home>
+                    element: <Home></Home>,
+                    loader: ()=>fetch('/services.json')
+                },
+                {
+                    path: 'service/:id',
+                    element: <ServiceDetail></ServiceDetail>,
+                    loader: ()=>fetch('/services.json')
                 },
                 {
                     path: '/projects',
