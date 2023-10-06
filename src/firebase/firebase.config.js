@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDa7A35qZ-Ite2jmCr0Tw4xABH96NPdLnA",
-  authDomain: "weddingperfectionists.firebaseapp.com",
-  projectId: "weddingperfectionists",
-  storageBucket: "weddingperfectionists.appspot.com",
-  messagingSenderId: "428741373091",
-  appId: "1:428741373091:web:fe5893a944c7e0fb386316"
+  apiKey: "AIzaSyAPFsbZHVW64_l6Ruc4EiSwf5iVSKC4HeM",
+  authDomain: "partyperfectionists-d2dc5.firebaseapp.com",
+  projectId: "partyperfectionists-d2dc5",
+  storageBucket: "partyperfectionists-d2dc5.appspot.com",
+  messagingSenderId: "651224476905",
+  appId: "1:651224476905:web:457e8e7dc0eb1975045478"
 };
 
 // Initialize Firebase

@@ -6,10 +6,11 @@ const Banner = () => {
                 <div className="hero-overlay bg-opacity-30"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
-                        <h1 className="mb-5 text-2xl text-yellow-100 font-normal">We're dedicated to making your wedding an unforgettable masterpiece, etching the most beautiful moments into the canvas of your love story.</h1>
+                        <h1 className="mb-5 text-3xl text-yellow-100 font-light font-youngSerif">May your special day be filled with laughter, love, and unforgettable moments that you'll cherish forever.</h1>
                     </div>
                 </div>
             </div>
+
         </div>
     );
 };

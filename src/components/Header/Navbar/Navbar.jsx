@@ -51,7 +51,7 @@ const Navbar = () => {
 
                         </ul>
                     </div>
-                    <Link to={'/'} className="normal-case text-xl font-youngSerif">Wedding Perfectionists</Link>
+                    <Link to={'/'} className="normal-case text-2xl font-youngSerif">Party Perfectionists</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -61,15 +61,15 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end flex items-center">
-                <p className="mr-1 font-semibold">pronoy nath</p>
-                <div>
-                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-2">
-                        
-                        <div className="w-10 rounded-full">
-                            <img src={defaultPic} />
-                        </div>
-                    </label>
-                </div>
+                    <p className="mr-1 font-semibold">pronoy nath</p>
+                    <div>
+                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-2">
+
+                            <div className="w-10 rounded-full">
+                                <img src={defaultPic} />
+                            </div>
+                        </label>
+                    </div>
 
                     <Link to={'/login'} className="btn bg-yellow-300 text-gray-800 border-none rounded-none">Login</Link>
                 </div>
