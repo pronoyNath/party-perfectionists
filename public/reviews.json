@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/VV9cfN0/Ellipse1.jpg",
+      "review": "Absolutely fantastic service! Our wedding was a dream come true, thanks to the incredible team at Party Perfectionists. From the initial planning to the last dance, everything was perfect.",
+      "name": "Ayesha Rahman",
+      "location": "Dhaka"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/nQHFbN0/Ellipse2.jpg",
+      "review": "Party Perfectionists exceeded our expectations in every way. They created a magical atmosphere for our anniversary celebration. We'll cherish the memories forever. Everything was loveable.",
+      "name": "Sadia Ahmed",
+      "location": "Chittagong"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/5TrMZzN/Ellipse3.jpg",
+      "review": "I couldn't be happier with the engagement party Party Perfectionists organized for us. The attention to detail and the passion they put into every aspect made it a night to remember.",
+      "name": "Nusrat Khan",
+      "location": "Khulna"
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/wC03YVj/Ellipse4.jpg",
+      "review": "Party Perfectionists made our retirement party a joyous and heartfelt occasion. They truly understand the meaning of celebration and created a beautiful event.",
+      "name": "Farhana Ali",
+      "location": "Rajshahi"
+    }
+  ]
+  

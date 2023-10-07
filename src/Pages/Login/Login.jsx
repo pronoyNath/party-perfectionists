@@ -54,10 +54,10 @@ const Login = () => {
     
 
     return (
-        <div className="bg-orange-100 py-10">
+        <div className=" py-10">
            
 
-            <div className="w-full max-w-sm p-4 bg-white border border-gray-200  shadow sm:p-6 md:p-8 dark:bg-violet-800 dark:border-gray-700 mx-auto">
+            <div className="w-full max-w-sm p-4 drop-shadow-2xl  bg-white border border-gray-200 sm:p-6 md:p-8 dark:bg-violet-800 dark:border-gray-700 mx-auto">
                 <form onSubmit={handleLogin} className="space-y-6" action="#">
                     <h5 className="text-xl font-medium text-gray-900 dark:text-white text-center">Login to our platform</h5>
                     <div>

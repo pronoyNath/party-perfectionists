@@ -53,12 +53,10 @@ const Register = () => {
 
     }
 
-    
-console.log(user);
     return (
-        <div className="bg-orange-100 py-10">
+        <div className=" py-10">
            
-            <div className="w-full max-w-sm p-4 bg-white border border-gray-200  shadow sm:p-6 md:p-8 dark:bg-pink-500 pt-2  mx-auto">
+            <div className="w-full max-w-sm p-4 bg-white border border-gray-200  drop-shadow-2xl  sm:p-6 md:p-8 dark:bg-pink-500 pt-2  mx-auto">
                 <form onSubmit={handleRegister} className="space-y-6" action="#">
                     <h5 className="text-xl font-medium text-center">Register to our platform</h5>
                     <div>

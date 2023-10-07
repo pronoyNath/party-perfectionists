@@ -5,11 +5,14 @@ import Footer from "../components/Footer/Footer";
 const MainLayout = () => {
     return (
         <>
-        <div className="max-w-6xl mx-auto font-youngSerif">
+        <div className="bg-[#eeeeee]">
+        <div className="max-w-6xl mx-auto font-youngSerif ">
             <Header></Header>
             <Outlet></Outlet>
         </div>
             <Footer></Footer>
+        </div>
+        
         </>
     );
 };

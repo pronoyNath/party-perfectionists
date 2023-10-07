@@ -5,6 +5,7 @@ import Services from "../../components/Services/Services";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Gallery from "../../components/Gallery/Gallery";
+import Reviews from "../../components/Reviews/Reviews";
 AOS.init();
 const Home = () => {
     const {services} = useLoaderData();
@@ -14,6 +15,7 @@ const Home = () => {
             <Banner></Banner>
             <Services services={services}></Services>
             <Gallery></Gallery>
+            <Reviews></Reviews>
         </div>
     );
 };
