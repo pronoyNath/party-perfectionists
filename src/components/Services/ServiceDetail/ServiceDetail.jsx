@@ -9,7 +9,7 @@ const ServiceDetail = () => {
     const [service, setService] = useState([]);
 
     useEffect(() => {
-        const findService = services.find(x => x.id == id)
+        const findService = services.find(service => service.id == id)
         setService(findService)
     }, [id, services])
     const { image, price, title, moreDetails, servicesProvided } = service;

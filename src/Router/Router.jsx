@@ -5,6 +5,8 @@ import OurProjects from "../Pages/OurProjects/OurProjects";
 import Contact from "../Pages/Contact/Contact";
 import Login from "../Pages/Login/Login";
 import ServiceDetail from "../components/Services/ServiceDetail/ServiceDetail";
+import Register from "../Pages/Register/Register";
+import PriveteRoute from "./PrivateRoute/PrivateRoute";
 
  const router = createBrowserRouter([
         {
@@ -18,7 +20,7 @@ import ServiceDetail from "../components/Services/ServiceDetail/ServiceDetail";
                 },
                 {
                     path: 'service/:id',
-                    element: <ServiceDetail></ServiceDetail>,
+                    element: <PriveteRoute><ServiceDetail></ServiceDetail></PriveteRoute>,
                     loader: ()=>fetch('/services.json')
                 },
                 {
@@ -32,6 +34,10 @@ import ServiceDetail from "../components/Services/ServiceDetail/ServiceDetail";
                 {
                     path: '/login',
                     element: <Login></Login>
+                },
+                {
+                    path: '/register',
+                    element: <Register></Register>
                 }
             ]
         }

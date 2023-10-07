@@ -1,7 +1,15 @@
 import { Link, NavLink } from "react-router-dom";
-import defaultPic from '../../../assets/user.png'
+import userDefaultPic from '../../../assets/user.png'
+import { useContext } from "react";
+import { AuthContext } from "../../../Provider/AuthProvider";
 
 const Navbar = () => {
+    const {user,logOut} = useContext(AuthContext);
+
+    const handleLogOut =()=>{
+        logOut()
+    }
+
     const links = <>
         <li className="">
             <NavLink
@@ -60,18 +68,24 @@ const Navbar = () => {
 
                     </ul>
                 </div>
-                <div className="navbar-end flex items-center">
-                    <p className="mr-1 font-semibold">pronoy nath</p>
-                    <div>
-                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-2">
-
-                            <div className="w-10 rounded-full">
-                                <img src={defaultPic} />
-                            </div>
-                        </label>
+                <div className="navbar-end">
+                    <div className="mr-1 text-xs">
+                        <p>{user?.displayName}</p>
+                        <p>{user?.email}</p>
                     </div>
-
-                    <Link to={'/login'} className="btn bg-yellow-300 text-gray-800 border-none rounded-none">Login</Link>
+                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-2">
+                        <div className="w-10 rounded-full">
+                            <img src={user ? 
+                            user?.photoURL ? user?.photoURL : userDefaultPic 
+                            : userDefaultPic
+                                 } />
+                        </div>
+                    </label>
+                    {
+                        user ? <Link onClick={handleLogOut} className="py-2 px-6 text-white  rounded-none btn-neutral">Logout</Link> :
+                        <Link to={'/login'} className="py-2 px-6 text-white rounded-none btn-neutral">login</Link>
+                    }
+                    
                 </div>
             </div>
         </div>
