@@ -29,24 +29,20 @@ const AuthProvider = ({children}) => {
         return signInWithPopup(auth,googleProvider);
     }
 
-    // Function to update user profile
+    // update user profile
     const updateUserProfile = (displayName, photoURL) => {
         setLoading(true);
 
-        // Get the current user
         const currentUser = auth.currentUser;
 
-        // Update the profile
         return updateProfile(currentUser, {
             displayName: displayName,
             photoURL: photoURL
         })
             .then(() => {
-                // Profile updated!
                 setLoading(false);
             })
             .catch((error) => {
-                // An error occurred while updating the profile
                 console.error("Error updating profile:", error);
                 setLoading(false);
             });
@@ -55,7 +51,6 @@ const AuthProvider = ({children}) => {
     // onAuth state change
     useEffect(()=>{
         const unsubscribe =  onAuthStateChanged(auth,currentUser =>{
-             // console.log('state catch#####: ',currentUser);
              setUser(currentUser);
              setLoading(false);
          });
