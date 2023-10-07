@@ -40,7 +40,7 @@ const Navbar = () => {
                     isPending ? "pending" : isActive ? "active" : ""
                 }
             >
-                Contact
+                Contact us
             </NavLink>
         </li>
     </>

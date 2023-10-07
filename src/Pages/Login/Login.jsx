@@ -26,12 +26,14 @@ const Login = () => {
         signIn(email,password)
         .then(result=>{
             console.log(result);
+
+            
             
             navigate(location?.state ? location.state : '/');
         })
         .catch(err=>{
-            console.log(err);
-            setLoginError("Email or Password dosen't match.")
+            console.log(err.message);
+            setLoginError(err.message)
            
         })
 
@@ -42,6 +44,7 @@ const Login = () => {
        googleSignIn()
        .then(re =>{
         console.log(re);
+        navigate(location?.state ? location.state : '/');
        })
        .catch(err=>{
         console.log(err);

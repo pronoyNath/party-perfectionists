@@ -25,7 +25,8 @@ import PriveteRoute from "./PrivateRoute/PrivateRoute";
                 },
                 {
                     path: '/projects',
-                    element: <OurProjects></OurProjects>
+                    element:<PriveteRoute> <OurProjects></OurProjects></PriveteRoute>,
+                    loader: ()=>fetch('/projects.json')
                 },
                 {
                     path: '/contact',

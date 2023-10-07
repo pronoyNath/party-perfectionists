@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/6mGk4nn/bride-groom-having-their-wedding-beach.jpg",
+        "title": "Anniversaries",
+        "details": "This anniversary project highlights our ability to infuse personal stories into event design. We worked closely with the couple to create a celebration that paid tribute to their unique love journey. The anniversary venue was adorned with mementos and photographs from their life together. A customized anniversary theme was crafted, reflecting their shared interests and cherished memories. The event featured heartfelt speeches, entertainment, and an anniversary cake that was a work of art. We believe that anniversaries are a testament to enduring love, and we ensure that each celebration is a reflection of the couple's beautiful journey together.",
+        "clientName": "John and Emily",
+        "date": "2023-05-20"
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/n3WrxSP/groom-putting-ring-bride-s-finger.jpg",
+        "title": "Engagement Parties",
+        "details": "This engagement party project was all about capturing the magic of a couple's love story. We designed an enchanting atmosphere that symbolized their commitment to each other. The engagement party venue was adorned with romantic decorations, and a breathtaking engagement cake took center stage. Guests enjoyed live music, and the evening was filled with laughter and heartfelt moments. Our photography services preserved the joyous occasion for a lifetime. We understand that engagements mark the beginning of a beautiful journey, and we aim to create events that set the tone for a lifetime of love and happiness.",
+        "clientName": "Michael and Sarah",
+        "date": "2023-02-15"
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/rv9kS4X/wedding.jpg",
+        "title": "Weddings",
+        "details": "Our wedding planning expertise shines through in this project, where we transformed a romantic garden into a fairytale wedding venue. We carefully selected the most exquisite flowers and created a captivating ambiance. The result was a breathtaking wedding celebration that left the couple and their guests enchanted. From the elegant archway to the enchanting lighting, every detail was executed flawlessly. We take pride in turning dreams into reality, and this wedding was no exception. Our team worked tirelessly to ensure the couple's vision was brought to life, and the result was a wedding that exceeded expectations.",
+        "clientName": "David and Lisa",
+        "date": "2023-07-10"
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/rQHMfGM/people-meeting-family-reunion.jpg",
+        "title": "Retirement Parties",
+        "details": "Retirement is a milestone worth celebrating, and this retirement party project exemplifies our commitment to making it a memorable occasion. We transformed the retirement venue into a space filled with gratitude and joy. Farewell speeches and tributes from colleagues touched everyone's hearts. Our catering services served a delicious feast, and the entertainment added a touch of fun and nostalgia. The retirement gifts and keepsakes provided a beautiful way to commemorate the retiree's contributions. We understand that retirement is the start of a new adventure, and we create parties that send retirees off in style.",
+        "clientName": "Robert's Retirement",
+        "date": "2023-04-05"
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/f03xY7q/front-view-couple-gender-reveal-party.jpg",
+        "title": "Baby Shower",
+        "details": "In this baby shower project, we celebrated the excitement and anticipation of a growing family. We carefully planned every aspect, from baby shower decorations to gender reveal ideas. Guests enjoyed games and activities that added to the joy of the occasion. Our catering services provided delightful treats, and professional photography captured the cherished moments. We take pride in creating baby showers that reflect the love and anticipation of welcoming a new member to the family. Our attention to detail ensures that every baby shower is a heartwarming and unforgettable experience.",
+        "clientName": "Sarah's Baby Shower",
+        "date": "2023-06-28"
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co/ChSBSVG/birthday-celebrations-with-screaming-friends.jpg",
+        "title": "Birthday Parties",
+        "details": "This vibrant birthday party project showcases our ability to create themed celebrations that cater to every age group. From superhero-themed parties for kids to sophisticated soirées for adults, we've done it all. In this particular project, we organized a spectacular carnival-themed birthday party for a young child. The colorful decorations, engaging games, and delicious treats made it an unforgettable day. Our attention to detail ensured that every aspect of the party was carefully planned, from the clown entertainment to the popcorn and cotton candy stations. We take pride in making birthdays special and creating memories that last a lifetime.",
+        "clientName": "Emma's 7th Birthday"
+    }
+]

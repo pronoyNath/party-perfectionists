@@ -10,12 +10,13 @@ const Register = () => {
     const [registerError, setRegisterError] = useState('');
     // const [success, setSuccess] = useState('');
     // const [holdName, setHoldname] = useState('');
-
+    
     const handleRegister = e => {
         e.preventDefault();
 
         const form = new FormData(e.currentTarget);
         // const name = form.get('name')
+        // const img = form.get('img');
         const email = form.get('email')
         const password = form.get('password')
         // setHoldname(name);
@@ -40,6 +41,7 @@ const Register = () => {
         // creating user 
         createUser(email, password)
             .then(() => {
+
                     navigate('/')
                     // user.displayName = holdName;
                
@@ -50,7 +52,9 @@ const Register = () => {
             })
 
     }
-console.log(user.displayName);
+
+    
+console.log(user);
     return (
         <div className="bg-orange-100 py-10">
            
@@ -60,6 +64,10 @@ console.log(user.displayName);
                     <div>
                         <label  className="block mb-2 text-sm font-medium ">Your Name</label>
                         <input type="text" name="name" className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  " placeholder="name" required/>
+                    </div>
+                    <div>
+                        <label  className="block mb-2 text-sm font-medium ">Your Image URL</label>
+                        <input type="text" name="img" className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  " placeholder="your image URL" required/>
                     </div>
                     <div>
                         <label  className="block mb-2 text-sm font-medium ">Your email</label>
