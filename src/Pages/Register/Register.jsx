@@ -80,7 +80,7 @@ console.log(user);
                         <p className="text-center pt-1 text-blue-900">{registerError}</p>
                     </div>
                     
-                    <button type="submit" className="w-full text-black bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-yellow-300 dark:hover:bg-yellow-500 dark:focus:ring-blue-800">Register your account</button>
+                    <button type="submit" className="w-full text-black font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-yellow-300 dark:hover:bg-yellow-500 ">Register your account</button>
                     <div className="text-sm font-medium">
                         Already Have an account? <Link to={"/login"} href="#" className="text-blue-700 hover:underline dark:text-blue-700 text-lg">Login account</Link>
                     </div>

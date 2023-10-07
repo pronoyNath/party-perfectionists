@@ -1,7 +1,7 @@
 
 const Contact = () => {
     return (
-        <div className=" bg-gray-900 p-10 my-5">
+        <div data-aos="zoom-in" className=" bg-gray-900 p-10 my-5">
 
             <form>
                 <div className="grid gap-6 mb-6 md:grid-cols-2">

@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
                     <h4 className="block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                         <span className="font-semibold text-pink-500">Event: </span>  {title}
                     </h4>
-                    <p className="mt-3 block font-sans text-xl font-normal leading-relaxed text-gray-700 antialiased">
+                    <p className="mt-3 block font-sans text-lg font-normal leading-relaxed text-gray-700 antialiased">
                         {details}
                     </p>
                 </div>
