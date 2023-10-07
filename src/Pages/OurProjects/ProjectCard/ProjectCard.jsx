@@ -1,10 +1,9 @@
 const ProjectCard = ({ project }) => {
-    console.log(project);
 
     const { image, title, details, clientName } = project;
     return (
         <div>
-            <div className="relative flex flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+            <div  data-aos="zoom-in" className="relative flex flex-col h-full rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                 <div className="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
                     <img
                         src={image}
@@ -12,15 +11,17 @@ const ProjectCard = ({ project }) => {
                     />
 
                 </div>
-                <div className="p-6">
+                <div className="p-6 flex-grow">
                     <h4 className="block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                         <span className="font-semibold text-pink-500">Event: </span>  {title}
                     </h4>
-                    <p className="mt-3 block font-sans text-lg font-normal leading-relaxed text-gray-700 antialiased">
+                    <div className="flex-grow">
+                    <p className="mt-3 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
                         {details}
                     </p>
+                    </div>
                 </div>
-                <div className="flex items-center justify-between p-6">
+                <div className="flex items-center justify-between p-6 ">
                     <div className="flex items-center -space-x-3">
 
                         <div
