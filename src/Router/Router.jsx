@@ -30,7 +30,7 @@ import PriveteRoute from "./PrivateRoute/PrivateRoute";
                 },
                 {
                     path: '/contact',
-                    element: <Contact></Contact>
+                    element: <PriveteRoute><Contact></Contact></PriveteRoute>
                 },
                 {
                     path: '/login',
