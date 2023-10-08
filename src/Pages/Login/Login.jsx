@@ -1,17 +1,20 @@
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { AiFillGoogleCircle } from "react-icons/ai";
 import { useContext, useState } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
+import toast from 'react-hot-toast';
+import { FaCircleCheck } from "react-icons/fa6";
 
 const Login = () => {
-    const {signIn,googleSignIn} = useContext(AuthContext);
+    const { user, signIn, googleSignIn } = useContext(AuthContext);
+    
 
     const location = useLocation();
     // console.log(location);
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const [loginError, setLoginError] = useState('');
 
-    const handleLogin = e =>{
+    const handleLogin = e => {
         e.preventDefault();
 
         const form = new FormData(e.currentTarget);
@@ -23,39 +26,110 @@ const Login = () => {
 
 
         // log in 
-        signIn(email,password)
-        .then(result=>{
-            console.log(result);
+        signIn(email, password)
+            .then(result => {
+                console.log(result);
 
-            
-            
-            navigate(location?.state ? location.state : '/');
-        })
-        .catch(err=>{
-            console.log(err.message);
-            setLoginError(err.message)
-           
-        })
+                //toast pop-up
+                toast.custom((t) => (
+                    <div
+                        className={`${t.visible ? 'animate-enter' : 'animate-leave'
+                            } max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
+                    >
+                        <div className="flex-1 w-0 p-4">
+                            <div className="flex items-start">
+                                <div className="flex pt-0.5 items-center">
+                                    <FaCircleCheck className=' h-[40px] w-[40px] text-green-500'></FaCircleCheck>
+                                </div>
+                                <div className="ml-3 flex-1">
+                                    <p className="text-sm font-medium text-gray-900">
+                                        WoW!!!
+                                    </p>
+                                    <p className="mt-1 text-sm text-gray-500">
+                                        Account loged in!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="flex border-l border-blue-200">
+                            <Link to={`${location?.state ? location.state : '/'}`}>
+                                <button
+                                    onClick={() => 
+                                        toast.dismiss(t.id)
+                                    }
+                                    className="w-full h-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                >
+                                    Close
+                                </button>
+                            </Link>
+                        </div>
+
+                    </div>
+                ))
+
+            })
+            .catch(err => {
+                console.log(err.message);
+                setLoginError(err.message)
+
+            })
 
     }
 
     //login by google
-    const handleGoogle = ()=>{
-       googleSignIn()
-       .then(re =>{
-        console.log(re);
-        navigate(location?.state ? location.state : '/');
-       })
-       .catch(err=>{
-        console.log(err);
-       })
+    const handleGoogle = () => {
+        googleSignIn()
+            .then(re => {
+                console.log(re);
+
+                //toast pop-up
+                toast.custom((t) => (
+                    <div
+                        className={`${t.visible ? 'animate-enter' : 'animate-leave'
+                            } max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
+                    >
+                        <div className="flex-1 w-0 p-4">
+                            <div className="flex items-start">
+                                <div className="flex pt-0.5 items-center">
+                                <FaCircleCheck className=' h-[40px] w-[40px] text-green-500'></FaCircleCheck>
+                                </div>
+                                <div className="ml-3 flex-1">
+                                    <p className="text-sm font-medium text-gray-900">
+                                        WoW!!!
+                                    </p>
+                                    <p className="mt-1 text-sm text-gray-500">
+                                        Account loged in!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="flex border-l border-blue-200">
+                            <Link to={`${location?.state ? location.state : '/'}`}>
+                                <button
+                                    onClick={() => toast.dismiss(t.id)}
+                                    className="w-full h-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                >
+                                    Close
+                                </button>
+                            </Link>
+                        </div>
+
+                    </div>
+                ))
+            })
+            .catch(err => {
+                console.log(err);
+                setLoginError(err.message)
+            })
     }
 
-    
+    console.log(user);
 
     return (
         <div className=" py-10">
-           
+
 
             <div className="w-full max-w-sm p-4 drop-shadow-2xl  bg-white border border-gray-200 sm:p-6 md:p-8 dark:bg-violet-800 dark:border-gray-700 mx-auto">
                 <form onSubmit={handleLogin} className="space-y-6" action="#">
@@ -72,10 +146,10 @@ const Login = () => {
                     </div>
                     <div className='border-b mx-auto'>
                         <h3 className=' text-white text-center'>Or,</h3>
-                       <div className='flex justify-center'>
-                       <button onClick={handleGoogle} className="btn btn-md mt-5 btn-outline btn-warning mb-5"> 
-                        <span className='text-2xl'><AiFillGoogleCircle></AiFillGoogleCircle></span> Login with gmail</button>
-                       </div>
+                        <div className='flex justify-center'>
+                            <button onClick={handleGoogle} className="btn btn-md mt-5 btn-outline btn-warning mb-5">
+                                <span className='text-2xl'><AiFillGoogleCircle></AiFillGoogleCircle></span> Login with gmail</button>
+                        </div>
                     </div>
 
                     <button type="submit" className="w-full text-black font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-yellow-300 dark:hover:bg-yellow-500 ">Login your account</button>

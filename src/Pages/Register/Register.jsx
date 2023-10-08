@@ -1,11 +1,13 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { useContext, useState } from "react";
+import toast from "react-hot-toast";
+import { FaCircleCheck } from "react-icons/fa6";
 
 const Register = () => {
     const { createUser, updateUserProfile } = useContext(AuthContext);
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const [registerError, setRegisterError] = useState('');
 
     const handleRegister = async (e) => {
@@ -37,7 +39,46 @@ const Register = () => {
             return updateUserProfile(name, img);
         })
         .then(() => {
-            navigate('/');
+
+             //toast pop-up
+             toast.custom((t) => (
+                <div
+                    className={`${t.visible ? 'animate-enter' : 'animate-leave'
+                        } max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
+                >
+                    <div className="flex-1 w-0 p-4">
+                        <div className="flex items-start">
+                            <div className="flex pt-0.5 items-center">
+                                <FaCircleCheck className=' h-[40px] w-[40px] text-green-500'></FaCircleCheck>
+                            </div>
+                            <div className="ml-3 flex-1">
+                                <p className="text-sm font-medium text-gray-900">
+                                    WoW!!!
+                                </p>
+                                <p className="mt-1 text-sm text-gray-500">
+                                    Account Create Successfully!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex border-l border-blue-200">
+                        <Link to={'/'}>
+                            <button
+                                onClick={() => 
+                                    toast.dismiss(t.id)
+                                }
+                                className="w-full h-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                            >
+                                Close
+                            </button>
+                        </Link>
+                    </div>
+
+                </div>
+            ))
+
+            // navigate('/');
         })
         .catch((err) => {
             console.error(err);

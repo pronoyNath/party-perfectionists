@@ -39,11 +39,11 @@ const OurProjects = () => {
                 >
                     <div className="h-14 p-2 font-poppins">
                     <div style={{ flex: '1' }}>
-                        <h5 style={{ color: 'blue-gray' }}>Hello, {user?.displayName}</h5>
+                        <h5 style={{ color: 'blue-gray' }}>Hello, {user?.displayName}.</h5>
                         
                     </div>
                     <div>
-                    <h5 style={{ color: 'blue-gray' }}>Pleae Checkout Our Projects</h5>
+                    <h5 style={{ color: 'blue-gray' }}>Please Checkout Some Projects We Have Done</h5>
                     </div>
                     </div>
                 </figcaption>

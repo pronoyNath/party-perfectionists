@@ -7,6 +7,7 @@ import Login from "../Pages/Login/Login";
 import ServiceDetail from "../components/Services/ServiceDetail/ServiceDetail";
 import Register from "../Pages/Register/Register";
 import PriveteRoute from "./PrivateRoute/PrivateRoute";
+import Toast from "../components/Toast/Toast";
 
  const router = createBrowserRouter([
         {
@@ -39,6 +40,10 @@ import PriveteRoute from "./PrivateRoute/PrivateRoute";
                 {
                     path: '/register',
                     element: <Register></Register>
+                },
+                {
+                    path: '/toast',
+                    element: <Toast></Toast>
                 }
             ]
         }
