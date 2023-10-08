@@ -50,8 +50,6 @@ const ServiceDetail = () => {
                         </ul>
                     </div>
 
-
-
                     <p className="block font-sans text-base font-light leading-relaxed text-gray-700 mt-5 antialiased">
                         {moreDetails}
                     </p>
