@@ -6,7 +6,7 @@ const Footer = () => {
             <footer className="footer footer-center p-10 bg-gray-700 text-white rounded-none ">
 
                 <aside>
-                    <Link to={'/'} className="normal-case text-2xl font-youngSerif">Party Perfectionists</Link>
+                    <Link to={'/'} className="normal-case text-xl md:text-2xl font-youngSerif">Party Perfectionists</Link>
                     <p>+880 17134-3432<br />partyperfectionists@gmail.com</p>
                 </aside>
 

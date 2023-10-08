@@ -19,7 +19,7 @@ const Reviews = () => {
             <div className='mt-20'>
                 <h3 className='font-semibold text-2xl text-center underline text-violet-500'>Some of Best Reviews</h3>
             </div>
-            <div className="grid grid-cols-2 my-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 my-10">
                 {
                     reviews?.map(userRating => <ReviewCard key={userRating.id} userRating={userRating}></ReviewCard>)
                 }

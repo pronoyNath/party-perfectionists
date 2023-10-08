@@ -58,7 +58,7 @@ const Navbar = () => {
 
                         </ul>
                     </div>
-                    <Link to={'/'} className="normal-case text-2xl font-youngSerif">Party Perfectionists</Link>
+                    <Link to={'/'} className="normal-case text-base md:text-2xl font-youngSerif hidden md:block">Party Perfectionists</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -68,11 +68,13 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
+                    {/* <div> */}
                     <div className="mr-1 text-xs">
                         <p>{user?.displayName}</p>
-                        <p>{user?.email}</p>
+                        <p className="hidden lg:block">{user?.email}</p>
                     </div>
-                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-2">
+                   <div>
+                   <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-2">
                         <div className="w-10 rounded-full">
                             <img src={user ? 
                             user?.photoURL ? user?.photoURL : "https://i.ibb.co/bghqWpR/user.png" 
@@ -80,6 +82,8 @@ const Navbar = () => {
                                  } />
                         </div>
                     </label>
+                   </div>
+                    {/* </div> */}
                     {
                         user ? <Link onClick={handleLogOut} className="py-2 px-6 text-white  rounded-none btn-neutral">Logout</Link> :
                         <Link to={'/login'} className="py-2 px-6 text-white rounded-none btn-neutral">login</Link>

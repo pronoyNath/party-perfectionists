@@ -13,8 +13,8 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 export default function Gallery() {
   return (
     <>
-    <div className=' pt-5'>
-           <h3 data-aos="fade-right" className='font-semibold text-2xl text-center underline text-pink-500'>Some of Our Best Pictures</h3>
+    <div className='pt-10 md:pt-5'>
+           <h3 data-aos="fade-right" className='font-semibold text-xl md:text-2xl text-center underline text-pink-500 -mb-10 md:-mb-0'>Some of Our Best Pictures</h3>
            </div>
       <Swiper
         effect={'coverflow'}
