@@ -5,7 +5,7 @@ const ProjectCard = ({ project }) => {
         <div>
             <div  data-aos="zoom-in" className="relative flex flex-col h-full rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                 <div className="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
-                    <img
+                    <img className="w-full"
                         src={image}
                         alt="ui/ux review check"
                     />

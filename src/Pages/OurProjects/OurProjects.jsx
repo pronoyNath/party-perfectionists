@@ -37,7 +37,7 @@ const OurProjects = () => {
                         backdropFilter: 'blur(4px)',
                     }}
                 >
-                    <div className="h-14 p-2 font-poppins">
+                    <div className="h-20 md:h-14 p-2 font-poppins">
                     <div style={{ flex: '1' }}>
                         <h5 style={{ color: 'blue-gray' }}>Hello, {user?.displayName}.</h5>
                         
@@ -50,7 +50,7 @@ const OurProjects = () => {
             </figure>
 
 
-            <div className="grid grid-cols-2 gap-10 pb-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 pb-10">
                 {
                     projects.map(project => <ProjectCard key={project.id} project={project}></ProjectCard>)
                 }
