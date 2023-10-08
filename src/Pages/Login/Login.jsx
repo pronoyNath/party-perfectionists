@@ -128,7 +128,7 @@ const Login = () => {
     console.log(user);
 
     return (
-        <div className=" py-10">
+        <div data-aos="zoom-in" className=" py-10">
 
 
             <div className="w-full max-w-sm p-4 drop-shadow-2xl  bg-white border border-gray-200 sm:p-6 md:p-8 dark:bg-violet-800 dark:border-gray-700 mx-auto">

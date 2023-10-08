@@ -7,12 +7,13 @@ import Login from "../Pages/Login/Login";
 import ServiceDetail from "../components/Services/ServiceDetail/ServiceDetail";
 import Register from "../Pages/Register/Register";
 import PriveteRoute from "./PrivateRoute/PrivateRoute";
-import Toast from "../components/Toast/Toast";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
  const router = createBrowserRouter([
         {
             path: '/',
             element: <MainLayout></MainLayout>,
+            errorElement: <ErrorPage></ErrorPage>,
             children:[
                 {
                     path: '/',
@@ -41,10 +42,6 @@ import Toast from "../components/Toast/Toast";
                     path: '/register',
                     element: <Register></Register>
                 },
-                {
-                    path: '/toast',
-                    element: <Toast></Toast>
-                }
             ]
         }
     ])
