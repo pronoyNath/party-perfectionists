@@ -1,5 +1,4 @@
 import { Link, NavLink } from "react-router-dom";
-import userDefaultPic from '../../../assets/user.png'
 import { useContext } from "react";
 import { AuthContext } from "../../../Provider/AuthProvider";
 
@@ -76,8 +75,8 @@ const Navbar = () => {
                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-2">
                         <div className="w-10 rounded-full">
                             <img src={user ? 
-                            user?.photoURL ? user?.photoURL : userDefaultPic 
-                            : userDefaultPic
+                            user?.photoURL ? user?.photoURL : "https://i.ibb.co/bghqWpR/user.png" 
+                            : "https://i.ibb.co/bghqWpR/user.png"
                                  } />
                         </div>
                     </label>

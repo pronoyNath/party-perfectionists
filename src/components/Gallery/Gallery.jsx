@@ -1,14 +1,4 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import img1 from '../../assets/1.jpg'
-import img2 from '../../assets/2.jpg'
-import img3 from '../../assets/3.jpg'
-import img4 from '../../assets/4.jpg'
-import img5 from '../../assets/5.jpg'
-import img6 from '../../assets/6.jpg'
-import img7 from '../../assets/7.jpg'
-import img8 from '../../assets/8.jpg'
-import img9 from '../../assets/9.jpg'
-
 
 // Import Swiper styles
 import 'swiper/css';
@@ -44,34 +34,33 @@ export default function Gallery() {
         initialSlide={4}
       >
         <SwiperSlide>
-          <img className='h-full object-contain' src={img1} />
+          <img className='h-full object-contain' src="https://i.ibb.co/VYFQyVT/1.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-        <img className='h-full object-contain' src={img2} />
+        <img className='h-full object-contain' src="https://i.ibb.co/f11gD9V/2.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-        <img className='h-full object-contain' src={img3} />
+        <img className='h-full object-contain' src="https://i.ibb.co/gtNgZwg/3.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-        <img className='h-full object-contain' src={img4} />
+        <img className='h-full object-contain' src="https://i.ibb.co/f0dhfWW/4.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='h-full object-contain' src={img6} />
+          <img className='h-full object-contain' src="https://i.ibb.co/d2kFy96/6.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='h-full object-contain' src={img5} />
+          <img className='h-full object-contain' src="https://i.ibb.co/6sGyB1s/5.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='h-full object-contain' src={img7} />
+          <img className='h-full object-contain' src="https://i.ibb.co/zHVkgrr/7.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='h-full object-contain' src={img8} />
+          <img className='h-full object-contain' src="https://i.ibb.co/f9c7zfH/8.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='h-full object-contain' src={img9} />
+          <img className='h-full object-contain' src="https://i.ibb.co/G0TCKT5/9.jpg" />
         </SwiperSlide>
       </Swiper>
     </>
   );
 }
-
