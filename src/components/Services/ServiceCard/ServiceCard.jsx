@@ -6,8 +6,8 @@ const ServiceCard = ({ service }) => {
     
     return (
         <div data-aos="fade-up-left">
-            <div>
-            <div className="relative flex h-[450px] flex-col  bg-white bg-clip-border text-gray-700 shadow-xl">
+            
+            <div className="relative flex h-[450px] flex-col bg-white bg-clip-border text-gray-700 shadow-xl">
                 <div className="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
                     <img className="h-52 w-full object-contain"
                         src={image}
@@ -33,7 +33,6 @@ const ServiceCard = ({ service }) => {
                     </div>
 
                 </div>
-            </div>
             </div>
         </div>
     );
